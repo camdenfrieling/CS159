@@ -1,4 +1,3 @@
-
 /***************************************************************************
 *
 *  Programmers and Purdue Email Addresses:
@@ -24,29 +23,36 @@
 
 int main()
 {
-  float x1;
-  float y1;
-  float x2;
-  float y2;
+  //variable declaration
+  float x1; //ordered pair 1, x variable
+  float y1; //ordered pair 1, y variable
+  float x2; //ordered pair 2, x variable
+  float y2; //ordered pair 2, y variable
+  float midpointx; //midpoint, x variable
+  float midpointy; //midpoint, y variable
+  float slope; //slope
+  float yintercept; //y-interecpt of equation
 
-  printf("Enter the first x coordinate ->");
+  //asks and scans for four variables for two ordered pairs
+  printf("Enter the first x coordinate -> ");
   scanf("%f",&x1);
-  printf("Enter the first y coordinate ->");
+  printf("Enter the first y coordinate -> ");
   scanf("%f",&y1);
-  printf("Enter the second x coordinate ->");
+  printf("Enter the second x coordinate -> ");
   scanf("%f",&x2);
-  printf("Enter the second y coordinate ->");
+  printf("Enter the second y coordinate -> ");
   scanf("%f",&y2);
 
+  //prints the two ordered pairs, formatted to one decimal space
   printf("Original endpoints: [%.1f, %.1f] and [%.1f, %.1f]", x1, y1, x2, y2);
 
-  float midpointx = (x1 + x2) / 2;
-  float midpointy = (y1 + y2) / 2;
-  float slope = (y2 - y1) / (x2 - x1);
-  slope = -1 / slope;
-  float b = midpointy - slope * midpointx;
+  //finds the midpoint, slope and y-intercept
+  midpointx = (x1 + x2) / 2;
+  midpointy = (y1 + y2) / 2;
+  slope = (y2 - y1) / (x2 - x1);
+  slope = -1 / slope; //creates the negative inverse of the parallel slope
+  yintercept = midpointy - slope * midpointx;
 
-  printf("\nEquation of the perpendicular bisector: y = %.2fx + %.2f\n", slope, b);
+  //prints out the equation of the perpendicular bisector in y-intercept form, formatted to two decimal spaces
+  printf("\nEquation of the perpendicular bisector: y = %.2fx + %.2f\n", slope, yintercept);
   return(0);
-
-}
