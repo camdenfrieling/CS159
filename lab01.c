@@ -24,14 +24,14 @@
 int main()
 {
   //variable declaration
-  float x1; //ordered pair 1, x variable
-  float y1; //ordered pair 1, y variable
-  float x2; //ordered pair 2, x variable
-  float y2; //ordered pair 2, y variable
-  float midpointx; //midpoint, x variable
-  float midpointy; //midpoint, y variable
-  float slope; //slope
-  float yintercept; //y-interecpt of equation
+  float x1 = 0; //ordered pair 1, x variable
+  float y1 = 0; //ordered pair 1, y variable
+  float x2 = 0; //ordered pair 2, x variable
+  float y2 = 0; //ordered pair 2, y variable
+  float midpointx = 0; //midpoint, x variable
+  float midpointy = 0; //midpoint, y variable
+  float slope = 0; //slope
+  float yintercept = 0; //y-interecpt of equation
 
   //asks and scans for four variables for two ordered pairs
   printf("Enter the first x coordinate -> ");
