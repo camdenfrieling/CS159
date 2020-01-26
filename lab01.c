@@ -2,7 +2,7 @@
 *
 *  Programmers and Purdue Email Addresses:
 *  1. chen3124@purdue.edu
-*  2. login2@purdue.edu
+*  2. chu171@purdue.edu
 *  3. login3@purdue.edu (delete line if no third partner)
 *
 *  Lab #: 1
@@ -13,7 +13,7 @@
 *  either modified or unmodified.  Neither have we provided access to our code
 *  to another. The effort we are submitting is our own original work.
 *
-*  Day, Time, Location of Lab: 1/21/2020, 10:31 AM, SC 189
+*  Day, Time, Location of Lab: Tue, 9:30 AM, SC 189
 *
 *  Program Description: Finds the perpendicular bisector from two ordered pairs
 *
@@ -55,4 +55,6 @@ int main()
 
   //prints out the equation of the perpendicular bisector in y-intercept form, formatted to two decimal spaces
   printf("\nEquation of the perpendicular bisector: y = %.2fx + %.2f\n", slope, yintercept);
+  
   return(0);
+}
