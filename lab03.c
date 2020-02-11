@@ -1,10 +1,9 @@
 
 /***************************************************************************
-*
 *  Programmers and Purdue Email Addresses:
-*  1. login1@purdue.edu
-*  2. login2@purdue.edu
-*  3. login3@purdue.edu (delete line if no third partner)
+*  1. chen3124@purdue.edu
+*  2. chu171@purdue.edu
+*  3. cfrielin@purdue.edu
 *
 *  Lab #: 03
 *
@@ -16,7 +15,7 @@
 *
 *  Day, Time, Location of Lab: Tuesday, 9:30am , SC 189
 *
-*  Program Description:
+*  Program Description: Finds the force of tension, mass per unit of length, velocity of wave generated and time to travel string length from length of string, mass of block maintaining tension, and either string mass or velocity of wave.
 *
 ***************************************************************************/
 
@@ -83,6 +82,4 @@ int main()
   printf("\nVelocity of wave generated:%11.1lf (kg/m)",velocity);
   printf("\nTime to travel string length:%9.3lf", time);
 }
-
-
 
