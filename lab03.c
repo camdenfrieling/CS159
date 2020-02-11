@@ -19,6 +19,27 @@
  *
  ***************************************************************************/
 
+
+/***************************************************************************
+*
+*  Programmers and Purdue Email Addresses:
+*  1. login1@purdue.edu
+*  2. login2@purdue.edu
+*  3. login3@purdue.edu (delete line if no third partner)
+*
+*  Lab #:
+*
+*  Academic Integrity Statement:
+*
+*  We have not used source code obtained from any other unauthorized source,
+*  either modified or unmodified.  Neither have we provided access to our code
+*  to another. The effort we are submitting is our own original work.
+*
+*  Day, Time, Location of Lab:
+*
+*  Program Description:
+*
+***************************************************************************/
 #include<stdio.h>
 #include<math.h>
 #define GRAVITY 9.8 //gravitational constant(meters per second squared)
@@ -48,7 +69,7 @@ int main()
   printf("\n1. Enter string mass\n2. Enter velocity of wave\n");
   printf("\nMake your selection -> ");
   scanf("%lf",&selection);
-  printf("Enter value for selection -> ");
+  printf("\nEnter value for selection -> ");
   scanf("%lf",&selectionnumber);
 
   //subtracts 1 from selection to get either 0(String mass) or 1(Velocity of wave)
@@ -74,14 +95,14 @@ int main()
   velocity = (selectionnumber * selection) + (sqrt(force / massPerUnit)) * (1 - selection);
 
   //calculates the time to travel string length
-  time = (lengthString - 1) / velocity;
+  time = lengthString / velocity;
 
   printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
   printf("\nMass of string:%11.1lf (kg)",massString);
   printf("\nLength of string:%9.1lf (m)",lengthString);
   printf("\nMass of block:%12.1lf (kg)",massBlock);
   printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-  printf("\nForce of tension:%10.1lf (N)",force);
+  printf("\nForce of tension:%9.1lf (N)",force);
   printf("\nMass per unit of length:%16.3lf (kg/m)",massPerUnit);
   printf("\nVelocity of wave generated:%11.1lf (m/s)",velocity);
   printf("\nTime to travel string length:%11.3lf (s)", time);
@@ -89,4 +110,3 @@ int main()
 
   return (0);
 }
-
