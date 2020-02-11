@@ -48,7 +48,7 @@ int main()
   printf("\n1. Enter string mass\n2. Enter velocity of wave\n");
   printf("\nMake your selection -> ");
   scanf("%lf",&selection);
-  printf("\nEnter value for selection -> ");
+  printf("Enter value for selection -> ");
   scanf("%lf",&selectionnumber);
 
   //subtracts 1 from selection to get either 0(String mass) or 1(Velocity of wave)
@@ -74,18 +74,19 @@ int main()
   velocity = (selectionnumber * selection) + (sqrt(force / massPerUnit)) * (1 - selection);
 
   //calculates the time to travel string length
-  time = lengthString / velocity;
+  time = (lengthString - 1) / velocity;
 
   printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
   printf("\nMass of string:%11.1lf (kg)",massString);
   printf("\nLength of string:%9.1lf (m)",lengthString);
-  printf("\nMass of block:%11.1lf (kg)",massBlock);
+  printf("\nMass of block:%12.1lf (kg)",massBlock);
   printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-  printf("\nForce of tension:%11.1lf (N)",force);
-  printf("\nMass per unit of length:%11.3lf (kg/m)",massPerUnit);
+  printf("\nForce of tension:%10.1lf (N)",force);
+  printf("\nMass per unit of length:%16.3lf (kg/m)",massPerUnit);
   printf("\nVelocity of wave generated:%11.1lf (m/s)",velocity);
-  printf("\nTime to travel string length:%9.3lf (s)", time);
+  printf("\nTime to travel string length:%11.3lf (s)", time);
   printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
 
   return (0);
 }
+
